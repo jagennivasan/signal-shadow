@@ -48,7 +48,6 @@ interface RoleRevealedData {
   revealedPlayers: string[];
 }
 
-interface GameProps {}
 
 const socket: Socket = io(import.meta.env.VITE_BACKEND_URL as string);
 

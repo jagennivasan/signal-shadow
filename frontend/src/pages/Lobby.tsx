@@ -108,7 +108,7 @@ function Lobby() {
       setError('');
     });
 
-    socket.on('gameStarted', (roomData: Room) => {
+    socket.on('gameStarted', () => {
       console.log('Game started, navigating to game page');
       navigate(`/game/${roomCode}`);
     });
